@@ -1,12 +1,19 @@
 {
   "intents": [
-
     {
-      "intent": "marthaGellhornQuote"
+      "intent": "marthaGellhorn"
     },
     {
       "intent": "AboutSkill"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
     }
-
   ]
 }
