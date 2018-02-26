@@ -2,6 +2,7 @@
 /* eslint quote-props: ["error", "consistent"]*/
 /**
  * Hear a Martha Gellhorn Quote with this alexa skill
+ * nodejs skill development kit.
  * This skill supports English language.
  **/
 
@@ -9,7 +10,7 @@
 
 const Alexa = require('alexa-sdk');
 
-const APP_ID = undefined;
+const APP_ID = undefined;  // TODO replace with your app ID (OPTIONAL).
 
 const languageStrings = {
     'en': {
@@ -40,39 +41,10 @@ const languageStrings = {
                 "I love you. Have a hell of a good time. I don’t really know what else is worth having.",
                 "No wars, in the war-logged record of our species, have been terminal. Until now, when we know that nuclear war would be the death of our planet. It is beyond belief that any governments–those brief political figures–arrogate to themselves the right to stop history, at their discretion.",
                 "People do not yet realize (because the mind isn't built that way) what war can be. They fear it but surely they fear it the way children fear nightmares, dimly, without definite images in their heads of how it will all work out.",
-                "I took only one suitcase, and a cosmetics case for medicines but I was worried about books. Solitude is all right with books, awful without.",
-                "And though various organizations in America and England collected money and sent food parcels to these refugees, nothing was ever received by the Spanish.",
-                "I see mysteries and complications wherever I look, and I have never met a steadily logical person.",
-                "I daresay I was the worst bed partner in five continents.",
-                "People do not yet realize (because the mind isn't built that way) what war can be. They fear it but surely they fear it the way children fear nightmares, dimly, without definite images in their heads of how it will all work out.",
-                "It is high time that I learn to be more careful about hope, a reckless emotion for travelers. The sensible approach would be to the expect the worst, the very worst, that way you avoid grievous disappointment and who knows with a tiny bit of luck, you might even have a moderately pleasant surprise, like the difference between hell and purgatory.",
-                "In Warsaw, you also remember that you are in a Communist-controlled country, though by all accounts the control is now humane and lenient, judged by what it was and what it is in other satellite countries. Still you do hear the incompetent echo in the tapped hotel telephone, you do notice that people look over their shoulders when talking in restaurants - the secret police are dormant but not forgotten; you feel in your bones, as you would a threatening change in the weather, every change in Russian mood or action. This is not and air we have ever breathed; I doubt if we would be strong enough to resist such a climate and stay as healthy in spirit as the Poles",
-                "I had a sudden notion of why history is such a mess: humans do not live long enough. We only learn from experience and have no time to use it in a continuous and sensible way.",
-                "But the soul concerns me; and I am beginning to wonder whether it is wise or useful to spend so much time searching for one’s own.",
-                "No wars, in the war-logged record of our species, have been terminal. Until now, when we know that nuclear war would be the death of our planet. It is beyond belief that any governments–those brief political figures–arrogate to themselves the right to stop history, at their discretion.",
-                "It is much harder to be lonely, when you have for a while stopped being lonely. I was used to having only myself, cold and hard as that is; I could live with it. And now I wait, for a voice, a face, a body, that is not going to be here, is not mine, does not in any case wait as I do, nor share this homesickness. How to explain that I taught myself to be tough and indifferent, because it mattered too much and learned not even to weep in my mind not to notice.",
-                "My kind of loneliness now has no cure, you know; it is something I expect to live with until I die. Friends are heavenly kind, sometimes fun; it would be fatal not to have them. But I by no means need or want daily contact; perhaps it takes as much out of me as it gives, perhaps takes more.",
-                "And this urge to run away from what I love is a sort of sadism I no longer pretend to understand.",
-                "I feel terribly strange, like a shadow, and full of dread. I dread the time ahead, the amputating time, I do not see how to manage it. I do not want the world to go dark and narrow and mean, and the world has been very unlovely in my eyes, and I very unlovely in it…",
-                "If there is a war, then all of the things most of us do won't matter any more. I have a feeling that one has to work all day and all night and live too, and swim and get the sun one's hair and laugh and love as many people as one can find around and do this all terribly fast, because the time getting shorter and shorter every day",
-                "Endurance was the Chinese secret weapon. The Japanese should have understood that, and everybody else had better remember it.",
-                "What was new to our ears these days, and thrilling to hear, was the steadiness and justice of those who spoke, the abscence of panic and exaggeration the quiet insistence on legal processes as opposed to trial by suspicion. McCarthyism so repelled the English that they take special care not to be infected by it.",
-                "The English are very proud of their Parliament, and week in, week out, century after century, they have pretty good cause to be.",
-                ".. none had been outside Russia. I kept trying to remember something that I had read about a species of fish that was born, lived, spawned, died in the dark waters of a cave; and were blind.",
-                "A dock worker from East Ham also spoke of freedom. 'You'll never find the English going Communist' he said. 'We don't like it. It's not true Communism, it dictatorial. We want to say what we think. I'm a republican myself and I don't like the Royal Family. They all look as if a good day's work would kill them'.",
-                "He had no other life and no other knowledge; he knew that he could not live anywhere now because in his mind, slyly, there was nothing but horror.",
-                "What gave these krauts a right to say who should be born and who shouldn't, and who could live and be let alone, and who would get caught and killed?",
-                "Politics really must be a rotten profession considering what awful moral cowards most politicians become as soon as they get the job.",
-                "I felt both puny and pretentious, trying to write in the grandeur of that natural world where everything was older than time and I was the briefest object in the landscape.",
-                "Always delighted to grab any privileges I can get, I don’t like the sense of being privileged by law.",
-                "The latrine broke my lion heart.",
-                "Our hearts are light and gay because now its happening, we're starting, we're travelling again.",
-                "I do not hope for a world at peace, all of it, all the time. I do not believe in the perfectibility of man, which is what would be required for world peace; I only believe in the human race. I believe the human race must continue.",
-                "Impatience leading swiftly to boredom is my vice, not panic.",
-                "Since I am devoted to my own freedom, I didn’t think it just to deny other people theirs; and a basic freedom must be to be bossed by your own kind, not by foreigners."
+                "I took only one suitcase, and a cosmetics case for medicines but I was worried about books. Solitude is all right with books, awful without."
             ],
             SKILL_NAME: 'Martha Gellhorn Quotes',
-            GET_QUOTE_MESSAGE: "Here's your Martha Gellhorn quote: ",
+            GET_QUOTE_MESSAGE: "Here's your fresh Martha Gellhorn quote: ",
             HELP_MESSAGE: 'You can say tell me a Martha Gellhorn Quote, or, you can say exit.',
             HELP_REPROMPT: 'You can say tell me a Martha Gellhorn Quote',
             STOP_MESSAGE: 'Goodbye!',
@@ -102,7 +74,7 @@ const handlers = {
         this.emit('GetAboutSkill');
     },
     'GetAboutSkill': function () {
-        const speechOutput = "This skill is dedicated to the poet Ming Washington.";
+        const speechOutput = "This skill was developed for the poet Ming Washington.";
         this.emit(':tellWithCard', speechOutput, this.t('SKILL_NAME'), speechOutput);
     },
     'AMAZON.HelpIntent': function () {

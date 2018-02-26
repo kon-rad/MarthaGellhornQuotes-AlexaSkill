@@ -1,0 +1,3 @@
+# Martha Gallhorn Quotes
+
+Martha Ellis Gellhorn was an American novelist, travel writer, and journalist, who is now considered one of the greatest war correspondents of the 20th century. She reported on virtually every major world conflict that took place during her 60-year career. Gellhorn was also the third wife of American novelist Ernest Hemingway, from 1940 to 1945. At the age of 89, ill and almost completely blind, she died in 1998 in an apparent suicide. The Martha Gellhorn Prize for Journalism is named after her.
