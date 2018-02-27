@@ -1,7 +1,7 @@
 {
   "intents": [
     {
-      "intent": "marthaGellhorn"
+      "intent": "marthaGellhornQuotes"
     },
     {
       "intent": "AboutSkill"

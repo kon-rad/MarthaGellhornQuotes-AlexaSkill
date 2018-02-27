@@ -73,18 +73,18 @@ const languageStrings = {
             ],
             SKILL_NAME: 'Martha Gellhorn Quotes',
             GET_QUOTE_MESSAGE: "Here's your Martha Gellhorn quote: ",
-            HELP_MESSAGE: 'You can say tell me a Martha Gellhorn Quote, or, you can say exit.',
-            HELP_REPROMPT: 'You can say tell me a Martha Gellhorn Quote',
+            HELP_MESSAGE: 'You can say "Alexa ask Martha Gellhorn Quotes to tell me a quote," or, you can say exit.',
+            HELP_REPROMPT: 'You can say"Alexa ask Martha Gellhorn Quotes to tell me a quote"',
             STOP_MESSAGE: 'Goodbye!',
         },
     }
 };
 
 const handlers = {
-    'marthaGellhorn': function () {
+    'marthaGellhornQuotes': function () {
         this.emit('GetQuote');
     },
-    'marthaGellhorn': function () {
+    'marthaGellhornQuotes': function () {
         this.emit('GetQuote');
     },
     'GetQuote': function () {
