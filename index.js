@@ -102,7 +102,7 @@ const handlers = {
         this.emit('GetAboutSkill');
     },
     'GetAboutSkill': function () {
-        const speechOutput = "This skill is dedicated to the poet Ming Washington.";
+        const speechOutput = "Martha Ellis Gellhorn was an American novelist, travel writer, and journalist who is considered one of the great war correspondents of the 20th century. She reported on virtually every major world conflict that took place during her 60-year career.";
         this.emit(':tellWithCard', speechOutput, this.t('SKILL_NAME'), speechOutput);
     },
     'AMAZON.HelpIntent': function () {
